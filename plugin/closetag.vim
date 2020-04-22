@@ -289,7 +289,7 @@ fun! s:CloseIt()
                     if b:closetag_haveAtt == 0
                         call s:Handler(b:closetag_tagName, b:closetag_html_mode)
                     en
-                    exe "normal! a</" . b:closetag_tagName . ">\<Esc>F<"
+                    exe "normal! a</" . b:closetag_tagName . "\<Esc>F<"
                     start
                     retu
                 en
